@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>고민상담봇</title>
+    <meta charset="UTF-8" />
+    <style>
+        .iframe-container {
+          position: relative;
+          padding-bottom: 240px;
+          height: 240px;
+          overflow: hidden;
+          width: 100%;
+        }
+        .iframe-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform-origin: left top;
+        }
+        .button-container {
+              display: flex;
+              flex-direction: column;
+              margin-top: 10px;
+              height: 20%;
+          }
+  
+          .my-button {
+              width: 100%;
+              height: 3vh;
+              text-align: center;
+              background-color: #000;
+              color: #fff;
+              text-decoration: bold;
+              border-radius: 25px;
+              margin-bottom: 10px;
+              border: none;
+              cursor: pointer;
+              font-weight: 700;
+              font-size: 16px;
+              
+          }
+      </style>
+
+  </head>
+
+  <body>
+    <div class="iframe-container">
+      <iframe src="https://getgpt.app/play/kdg9e366fq/iframe" scrolling="no"></iframe>
+    </div>
+
+   
+</div> <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-rNj3K627QpKSUqzb" data-ad-width="100%"
+data-ad-height="100"></ins>
+<div class="button-container"> <a href="http://open.kakao.com" target="_blank"> 
+  <button type="button" class="my-button">다른사람과 고민 이야기하기</button> </a> 
+   <button class="my-button" id="screenshot-button">SNS에 고민 공유하기</button>
+
+   </div>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+<script>
+  var windowWidth = window.innerWidth;
+  var windowHeight = window.innerHeight;
+
+  if (windowHeight > windowWidth) {
+    var iframe = document.querySelector('.iframe-container iframe');
+    iframe.style.width = "50%";
+    iframe.style.height = "50%";
+    iframe.style.transform = 'scale(2)';
+
+    var iframecontainer = document.querySelector('.iframe-container');
+    iframecontainer.style.paddingBottom = "480px";
+    iframecontainer.style.height = "480px";
+  }
+</script>
+  </body>
+</html>
